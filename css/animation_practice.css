@@ -1,0 +1,178 @@
+html,body {
+	width: 100%;
+	height: 100%;
+	background-color: #E6E6E6;
+}
+
+.grid_container {
+	width: 200px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.mono {
+font-family: 'Source Sans Pro', sans-serif;
+	font-size: 5em;
+	float: left;
+	margin-left: 5px;
+}
+
+/* this is where all of your CSS styles go */
+
+@keyframes h_fade {
+	0% {opacity: 0; top: 0px; color: white;}
+	15% {opacity: 1; top: -150px; color: white;}
+	30% {opacity: 1; top: -75px; color: white;}
+	45% {opacity: 1; top: 0px; color: magenta;}
+	60% {opacity: 1; top: 0px; color: magenta;}
+	75% {opacity: 0.7; top: 0px; color: magenta;}
+	100% {opacity: 0; color: magenta;}
+
+}
+
+.h {
+	opacity: 0;
+	position: relative;
+	animation: h_fade 3s linear; /*length of animation*/
+	animation-fill-mode: forwards ; /*Keeps effect on screen*/
+}
+
+@keyframes w_fade {
+	0% {opacity: 0; top: -50px; color: white;}
+	15% {opacity: 0; top:-50px; color: white;}
+	30% {opacity: 0; top: -50px; color: white;}
+	45% {opacity: 0; top: -50px; color: #9E74B5;}
+	60% {opacity: 0; top: -50px; color: #9E74B5;}
+	75% {opacity: 1; top: -50px; color: #9E74B5;}
+	100% {opacity: 1; top: -50px; color: #9E74B5;}
+}
+
+.w { 
+	position: absolute;
+	left: 0px;
+	top: -50px;
+	opacity: 0;
+	animation: w_fade 2s ;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes e_fade {
+	0% {opacity: 0; top: 0px; color: white;}
+	15% {opacity: 1; top: -150px; color: white;}
+	30% {opacity: 1; top: -75px; color: white;}
+	45% {opacity: 1; top: 0px; color: yellow;}
+	60% {opacity: 1; top: 0px; color: yellow;}
+	75% {opacity: 0.7; top: 0px; color: yellow;}
+	100% {opacity: 0; color: yellow;}
+}
+
+.e {
+	opacity: 0;
+	position: relative;
+	animation: e_fade 3s linear; /*length of animation*/
+	animation-delay: 0.2s;
+	animation-fill-mode: forwards ; /*Keeps effect on screen*/
+}
+
+@keyframes i_fade {
+	0% {opacity: 0; top: -50px; color: white;}
+	15% {opacity: 0; top:-50px; color: white;}
+	30% {opacity: 0; top: -50px; color: white;}
+	45% {opacity: 0; top: -50px; color: #9E74B5;}
+	60% {opacity: 0; top: -50px; color: #9E74B5;}
+	75% {opacity: 1; top: -50px; color: #9E74B5;}
+	100% {opacity: 1; top: -50px; color: #9E74B5;}
+}
+
+.i { 
+	position: absolute;
+	left: 68px;
+	top: -50px;
+	opacity: 0;
+	animation: i_fade 2s ;
+	animation-delay: 2s;
+	animation-fill-mode: forwards ;
+}
+
+@keyframes l_fade {
+	0% {opacity: 0; top: 0px; color: white;}
+	15% {opacity: 1; top: -150px; color: white;}
+	30% {opacity: 1; top: -75px; color: white;}
+	45% {opacity: 1; top: 0px; color: lime;}
+	60% {opacity: 1; top: 0px; color: lime;}
+	75% {opacity: 1; top: 0px; color: #9E74B5;}
+	100% {opacity: 1; color: #9E74B5;}
+}
+
+.l {
+	opacity: 0;
+	position: relative;
+	animation: l_fade 3s linear; /*length of animation*/
+	animation-delay: 0.4s;
+	animation-fill-mode: forwards ; /*Keeps effect on screen*/
+}
+
+@keyframes repl_fade {
+	0% {opacity: 0; top: 0px; color: white;}
+	15% {opacity: 1; top: -150px; color: white;}
+	30% {opacity: 1; top: -75px; color: white;}
+	45% {opacity: 1; top: 0px; color: cyan;}
+	60% {opacity: 1; top: 0px; color: cyan;}
+	70% {opacity: 1; top: 0px; color: #9E74B5;}
+	75% {opacity: 1; top: 0px; color: #9E74B5;}
+	100% {opacity: 1; color: #9E74B5;}
+}
+
+.repl {
+	opacity: 0;
+	position: relative;
+	animation: repl_fade 3s linear; /*length of animation*/
+	animation-delay: 0.6s;
+	animation-fill-mode: forwards ; /*Keeps effect on screen*/
+}
+
+@keyframes o_fade {
+	0% {opacity: 0; top: 0px; color: white;}
+	15% {opacity: 1; top: -150px; color: white;}
+	30% {opacity: 1; top: -75px; color: white;}
+	45% {opacity: 1; top: 0px; color: mediumorchid;}
+	60% {opacity: 1; top: 0px; color: mediumorchid;}
+	70% {opacity: 1; top: 0px; color: #9E74B5;}
+	75% {opacity: 1; top: 0px; color: #9E74B5;}
+	100% {opacity: 1; color: #9E74B5;}
+}
+
+.o {
+	opacity: 0;
+	position: relative;
+	animation: o_fade 3s linear; /*length of animation*/
+	animation-delay: 0.8s;
+	animation-fill-mode: forwards ; /*Keeps effect on screen*/
+}
+
+
+@keyframes repw_fade {
+	0% {opacity: 0; top: -50px; color: white;}
+	15% {opacity: 0; top:-50px; color: white;}
+	30% {opacity: 0; top: -50px; color: white;}
+	45% {opacity: 0; top: -50px; color: #9E74B5;}
+	60% {opacity: 0; top: -50px; color: #9E74B5;}
+	75% {opacity: 1; top: -50px; color: #9E74B5;}
+	100% {opacity: 1; top: -50px; color: #9E74B5;}
+}
+
+.repw { 
+	position: absolute;
+	left: 190px;
+	top: -50px;
+	opacity: 0;
+	animation: w_fade 2s ;
+	animation-delay: 2s;
+	animation-fill-mode: forwards; }
+
